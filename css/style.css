@@ -1,0 +1,11 @@
+h1{
+    color:orange;
+    background-color: brown;
+    padding: 5px;
+}
+p{
+    font-family: Consolas;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+}

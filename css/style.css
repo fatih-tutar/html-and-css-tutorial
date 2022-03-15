@@ -1,11 +1,32 @@
+body{
+    background-color: gray;
+    color: black;
+    background-image: url(../images/htmlcss.png);
+    background-repeat: repeat-x;
+    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    opacity: 0.5;
+}
 h1{
     color:orange;
     background-color: brown;
     padding: 5px;
 }
+h2{
+    text-align: center;
+}
 p{
     font-family: Consolas;
-    font-size: 24px;
+    font-size: 50px;
     font-style: italic;
     font-weight: bold;
+    line-height: 100%;
+    text-indent: 40px;
+}
+.colorblue{
+    color:blue;
+}
+#last{
+    color:red;
 }

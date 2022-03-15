@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="#" name="form1" id="form1" method="post">
+        <pre>
+            <input type="text" name="username" id="username" placeholder="Username" autocomplete="off" >
+            <input type="text" name="age" id="age" placeholder="Age" value="18"onclick="alert('Hello Javascript!');">
+            <input type="password" name="password" id="password" placeholder="Password" maxlength="6">
+            <input type="email" name="email" id="email" placeholder="Email" disabled size="30">
+            <input type="hidden" name="invisibledata" value="invisibledata">
+            <input type="url" name="url" id="url" placeholder="Enter a url please">
+            <input type="tel" name="tel" id="tel" placeholder="Telephone">
+            <input type="search" name="search" id="search" placeholder="Search">
+            <input type="date" name="date" id="date">
+            <label for="check1">
+                <input type="checkbox" name="check" id="check1" value="0">I agree
+            </label>
+            <label for="check2">
+                <input type="checkbox" name="check" id="check2" value="1">I agree
+            </label>
+            <label for="radio1">
+                <input type="radio" name="radio" id="radio1">I agree
+            </label>
+            <label for="radio2">
+                <input type="radio" name="radio" id="radio2">I do not agree
+            </label>
+            <select name="list" id="listid">
+                <option value="0" selected>Select please</option>
+                <option value="hmtl">html</option>
+                <option value="css">css</option>
+                <option value="js">Javascript</option>
+                <option value="php">php</option>
+            </select>
+            <textarea name="longtext" id="paragraph" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send">
+            <input type="button" value="Button">
+            <input type="reset" value="Reset">
+        </pre>
+    </form>
+</body>
+</html>

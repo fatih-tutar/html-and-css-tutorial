@@ -1,0 +1,19 @@
+h2{
+    text-align: center;
+    text-decoration: overline;
+    text-transform: uppercase;
+    text-transform: capitalize;    
+    letter-spacing: 1cm;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.special-text{
+    color: red;
+    color: rgb(0,128,0);
+    text-align: justify;
+    text-indent:4em;
+}

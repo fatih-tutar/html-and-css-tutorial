@@ -1,0 +1,6 @@
+.style-border{
+    border-style: solid;
+    padding: 15px;
+    border-width: 2px 4px 6px 8px;
+    border-color: red olive blueviolet gold;
+}

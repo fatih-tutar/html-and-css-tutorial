@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Style Details</title>
+    <style>
+        .special-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .special-table th,td{
+            border:5px solid #333;
+            height: 100px;
+            text-align: center;
+            padding: 10px;
+            vertical-align: middle;
+        }
+        .special-table th{
+            background-color: darkmagenta;
+            color: white;
+        }
+        .special-table tr:nth-child(even){
+            background-color: rgb(192, 192, 192);
+        }
+        .special-table tr:hover{
+            background-color: rgb(255, 0, 0);
+        }        
+    </style>
+</head>
+<body>
+    <h2 class="special-font">Html and Css Course</h2>
+    <div style="overflow-x: auto;">
+        <table class="special-table">
+            <thead>
+                <tr>
+                    <th>php</th>
+                    <th>html</th>
+                    <th>css</th>
+                    <th>php</th>
+                    <th>html</th>
+                    <th>css</th>
+                    <th>php</th>
+                    <th>html</th>
+                    <th>css</th>
+                    <th>php</th>
+                    <th>html</th>
+                    <th>css</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>jquery</td>
+                    <td>pyhton</td>
+                    <td>restful</td>
+                </tr>
+                <tr>
+                    <td>fontawesome</td>
+                    <td>photoshop</td>
+                    <td>canva</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>c++</td>
+                    <td>nodejs</td>
+                    <td>bootstrap</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

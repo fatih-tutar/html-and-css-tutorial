@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Display Commands</title>
+    <style>
+        .sp-span{
+            border: 2px solid red;
+            margin: 5px;
+            padding: 5px;
+            display: block;
+        }
+        h1,h2,div{
+            display: inline;
+        }
+        div{
+            border:2px solid black;
+        }
+        ul{
+            list-style-type: none;
+        }
+        ul > li{
+            display:inline;
+        }
+        ul > li > a{
+            text-decoration: none;
+            color: darkred;
+            font-size: 40px;
+            margin: 5px;
+        }
+        ul > li > a:hover{
+            text-decoration: underline;
+            color:#333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Html and Css Tutorial Set</h1>
+    <span>The display value of span tag is inline as default.</span>
+    <span>The display value of span tag is inline as default.</span>
+    <span class="sp-span">The class of this span tag has block display value.</span>
+    <h1>Header tag has block display properties as default.</h1>
+    <h2>But we can change its display properties as inline.</h2>
+    <div>Divisions have block display property as default.</div>
+    <div>But we can change its display properties as inline.</div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contacts</a></li>
+    </ul>
+    <ul>
+        <li><a href="#">About</a></li>
+        <li style="display:none;"><a href="#">About Us</a></li>
+        <li><a href="#">display</a></li>
+        <li><a href="#">none</a></li>
+    </ul>
+    <ul>
+        <li><a href="#">About</a></li>
+        <li style="visibility:hidden;"><a href="#">About Us</a></li>
+        <li><a href="#">visibility</a></li>
+        <li><a href="#">hidden</a></li>
+    </ul>
+</body>
+</html>

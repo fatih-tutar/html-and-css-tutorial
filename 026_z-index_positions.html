@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index, Fixed and Static</title>
+    <style>
+        .main{
+            border: 2px solid #333;
+            margin: 5px;
+            margin-top: 200px;
+            width:70%;
+            height: 350px;
+            background-color: peru;
+        }
+        .main > .box{
+            border: 2px solid #900;
+            width: 200px;
+            height: 200px;
+            float:left;
+            background-color: white;
+            margin: 30px;
+            padding: 15px;
+            position: relative;
+            z-index: 1;
+        }
+        .main > .box2 {
+            border: 2px solid #900;
+            width: 200px;
+            height: 200px;
+            float: left;
+            background-color: white;
+            margin: 30px;
+            padding: 15px;
+            position: absolute;
+            left: 200px;
+            top: 92px;
+            z-index: 2;
+        }
+        .main > .box3 {
+            border: 2px solid #900;
+            width: 200px;
+            height: 200px;
+            float:left;
+            background-color: white;
+            margin: 30px;
+            padding: 15px;
+            position: relative;
+            z-index: 3;
+        }
+        img{
+            position: absolute;
+            z-index: -1;
+            top:0px;
+            left: 0px;
+            width: 100%;
+        }
+        .fixed{
+            position: fixed;
+            bottom:0px;
+            border:#900 solid 1px;
+            background-color: blueviolet;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: white;">HTML and CSS Course</h1>
+    <div class="main">
+        <div class="box">Box 1</div>
+        <div class="box2">Box 2</div>
+        <div class="box3">Box 3</div>
+    </div>
+    <br /><br /><br />
+    <img src="https://www.teahub.io/photos/full/15-153414_scarface-desktop-wallpapers-scarface-1983.jpg" alt="">
+    <div class="fixed" style="text-align: center; width: 100%;">This div remains fixed even if you scroll down the page</div>
+</body>
+</html>

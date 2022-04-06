@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        a:link{
+            color:red;
+            text-decoration: none;
+        }
+        a:visited{
+            color: purple;
+        }
+        a:hover{
+            color: orange;
+        }
+        a:active{
+            color: blue;
+        }
+        .special-link:hover{
+            color:brown;
+            font-weight: bold;
+        }
+        #header:hover{
+            color:pink;
+            font-weight: bold;
+        }
+        div{
+            background-color: darkred;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            width: 30%;
+        }
+        div:hover{
+            background-color: rgb(106, 106, 106);
+        }
+        #name{
+            background-color: yellow;
+            padding: 10px;
+            width: 15%;
+            display: none;
+            color: black;
+        }
+        div{
+            border: 2px dashed red;
+        }
+        .pseudo:hover #name{
+            display:block;
+        }
+        input{
+            border:2px solid #ddd;
+            width: 20%;
+            padding: 10px;
+        }
+        input:focus{
+            background-color: black;
+            color:white;
+        }
+        li:first-child{
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">HTML and CSS Tutorial</h1>
+    <p>
+        <a href="https://google.com" title="Google" target="_blank">Go to Google</a>
+    </p>
+    <p>
+        <a href="https://google.com" title="Google" target="_blank" class="special-link">Go to Google Page</a>
+    </p>
+    <div class="pseudo">
+        If you do not work, you can not grow.
+        <p id="name">Fatih Tutar</p>
+    </div>
+    <input type="text" style="margin-top:10px;" placeholder="Enter your name">
+    <p>This is first paragraph</p>
+    <ul>
+        <li>First li tag</li>
+        <li>Second li tag</li>
+        <li>Third li tag</li>
+        <li>Fourth li tag</li>
+    </ul>
+    <p>Second Paragraph</p>
+    <p>Last Paragraph</p>
+</body>
+</html>

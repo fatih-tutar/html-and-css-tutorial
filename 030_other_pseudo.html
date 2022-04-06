@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Pseudo Classes</title>
+    <style>
+        li:first-child b{
+            color:blue;
+        }
+        li b:first-child{
+            color: red;
+        }
+        p:lang(fr){
+            background-color: darkolivegreen;
+            padding: 10px;
+        }
+        #check:checked{
+            width:300px;
+            height:100px;
+        }
+        input[type="email"]:disabled{
+            background-color: yellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML and CSS Tutorial</h1>
+
+    <p><input type="text" name="username" id="username" placeholder="Username"></p>
+    <p><input type="email" name="email" id="email" placeholder="Email" disabled></p>
+
+    <input type="checkbox" name="check" id="check"> Check it!
+
+    <p lang="fr">bonjour le monde</p>
+    <p lang="en">Hello world</p>
+
+    <ul>
+        <li><b>First</b> <b>Child</b></li>
+        <li>second li</li>
+        <li>third li</li>
+    </ul>
+</body>
+</html>

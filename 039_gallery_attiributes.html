@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery and Attiribute Selectors</title>
+    <style>
+        .gallery{
+            margin:10px;
+            border:1px solid #bbb;
+            float: left;
+            width: 250px;
+            height: 350px;
+        }
+        .desc{
+            padding: 15px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        .gallery img{
+            width: 100%;
+        }
+        .gallery:hover{
+            border:1px solid #ccc;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+        }
+        a[target]{
+            padding: 10px;
+            background-color: darkolivegreen;
+            color: white;
+            text-decoration: none;
+        }
+        a[target='_self']{
+            padding: 10px;
+            background-color: orangered;
+            color: white;
+            text-decoration: none;
+        }
+        [class |='header']{
+            font-size: 25px;
+        }
+        p{
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML and CSS Tutorial</h1>
+    <p>
+        <a href="https://google.com" class="header-two" target="_blank" title="Google">Go to Google</a>
+    </p>
+    <p>
+        <a href="https://youtube.com" target="_top" title="Youtube">Go to Youtube</a>
+    </p>
+    <p>
+        <a href="https://twitter.com" target="_self" title="Twitter">Go to Twitter</a>
+    </p>
+    <div class="gallery">
+        <a href="#"><img src="images/htmlcss.png" width="250" height="130" alt=""></a>
+        <div class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+    </div>
+    <div class="gallery">
+        <a href="#"><img src="images/htmlcss.png" width="250" height="130" alt=""></a>
+        <div class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+    </div>
+    <div class="gallery">
+        <a href="#"><img src="images/htmlcss.png" width="250" height="130" alt=""></a>
+        <div class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+    </div>
+    <div class="gallery">
+        <a href="#"><img src="images/htmlcss.png" width="250" height="130" alt=""></a>
+        <div class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+    </div>
+    <div class="gallery">
+        <a href="#"><img src="images/htmlcss.png" width="250" height="130" alt=""></a>
+        <div class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+        </div>
+    </div>
+    <div class="gallery">
+        <a href="#"><img src="images/htmlcss.png" width="250" height="130" alt=""></a>
+        <div class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+        </div>
+    </div>
+    <div class="gallery">
+        <a href="#"><img src="images/htmlcss.png" width="250" height="130" alt=""></a>
+        <div class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+        </div>
+    </div>
+    <div class="gallery">
+        <a href="#"><img src="images/htmlcss.png" width="250" height="130" alt=""></a>
+        <div class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+        </div>
+    </div>
+    <div class="gallery">
+        <a href="#"><img src="images/htmlcss.png" width="250" height="130" alt=""></a>
+        <div class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+        </div>
+    </div>
+    <div class="gallery">
+        <a href="#"><img src="images/htmlcss.png" width="250" height="130" alt=""></a>
+        <div class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+        </div>
+    </div>
+    <div class="gallery">
+        <a href="#"><img src="images/htmlcss.png" width="250" height="130" alt=""></a>
+        <div class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+        </div>
+    </div>
+    <div class="gallery">
+        <a href="#"><img src="images/htmlcss.png" width="250" height="130" alt=""></a>
+        <div class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+        </div>
+    </div>
+</body>
+</html>

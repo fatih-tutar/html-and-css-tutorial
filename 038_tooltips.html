@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltips</title>
+    <style>
+        .tooltip{
+            position: relative;
+            display: inline-block;
+            margin-left: 25%;
+            width: 100%;
+        }
+        input{
+            border:2px solid #ddd;
+            width: 14%;
+            padding: 9px;
+        }
+        .tp-text{
+            width: 250px;
+            background-color: red;
+            color:white;
+            padding: 7px 60px;
+            border-radius: 4px;
+            position: absolute;
+            z-index: 1;
+            visibility: hidden;
+            left: 17%;
+        }
+        .tooltip:hover .tp-text{
+            visibility: visible;
+        }
+        .tp-text::after{
+            content: "";
+            position: absolute;
+            border-width: 8px;
+            border-style:solid;
+            border-color:transparent red transparent transparent;
+            right: 100%;
+                        
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML and CSS Tutorial</h1>
+    <div class="tooltip">
+        <input type="text" name="username" id="username">
+        <label for="" class="tp-text">Username</label>
+    </div>
+</body>
+</html>

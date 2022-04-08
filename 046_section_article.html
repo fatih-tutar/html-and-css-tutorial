@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section and Article</title>
+    <style>
+        body{
+            margin: 0px;;
+        }
+        .page-top{
+            background-color: darkkhaki;
+            padding: 10px;
+            text-align: center;
+            color: rgb(0, 93, 0);
+        }
+        .page-left{
+            background-color: darkgoldenrod;
+            padding: 10px;
+            text-align: justify;
+            color: rgb(107, 21, 0);
+            width: 73.5%;
+            height: 400px;
+            float: left;
+        }
+        .page-right{
+            background-color: rgb(170, 193, 0);
+            padding: 10px;
+            text-align: justify;
+            color: rgb(0, 28, 106);
+            width: 22%;
+            height: 400px;
+            float: left;
+        }
+        .page-left .content{
+            padding: 10px;
+        }
+        .page-left header{
+            color: orange;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="page-top">
+            <header>
+                <h2>
+                    HTML 5 and CSS 3 Tutorial
+                </h2>
+            </header>
+        </section>
+        <section class="page-left">
+            <header><h2>Header</h2></header>
+            <article class="content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </article>
+            <footer>The left part of the site will be here.</footer>
+        </section>
+        <section class="page-right">
+            <p>The right part of the site will be here.</p>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Styling</title>
+    <style>
+        .frm-group{
+            background-color: darkolivegreen;
+            padding: 10px;
+            width: 50%;
+            border-radius: 4px;
+        }
+        label{
+            padding: 3px;
+            color: white;
+            display: block;
+        }
+        input[type="text"]{
+            width: 100%;
+            padding: 10px 5px;
+            margin: 10px 0;
+            display: block;
+            border:1px solid black;
+            border-radius: 3px;
+            box-sizing: border-box;
+            color: #555;
+        }
+        button[type="button"]{
+            width: 100%;
+            background-color: #111;
+            color: #fff;
+            padding: 10px 0;
+            margin:15px 0;
+            border: none;
+            border-radius: 2px;
+            cursor:pointer;
+        }
+        button[type="button"]:hover{
+            background-color: #222;
+        }
+        input[type="text"]:focus{
+            box-shadow: 1px 1px 1px 5px rgba(0, 0, 0, 0.3);
+        }
+        #search{
+            background: white url('images/search.png') no-repeat 3px 2px;
+            padding: 10px 39px;
+        }
+        select{
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border:none;
+            border-radius: 3px;
+        }
+        textarea{
+            width: 100%;
+            height: 140px;
+            color: #bbb;
+            padding: 10px 5px;
+            box-sizing: border-box;
+            border:1px solid #ccc;
+            font-size: 18px;
+            background-color: #222;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="frm-group">
+        <form action="#" id="frmInsert" name="frmInsert">
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="name">
+
+            <label for="lastName">Surname : </label>
+            <input type="text" id="lastName" name="lastName">
+
+            <label for="country">Country : </label>
+            <select name="country" id="country">
+                <option value="Tr">Turkey</option>
+                <option value="Gr">Germany</option>
+                <option value="En">England</option>
+                <option value="Fr">France</option>
+                <option value="US">USA</option>
+                <option value="Jp">Japan</option>
+                <option value="Ch">China</option>
+            </select>
+            <label for="search">Ara : </label>
+            <input type="text" id="search" name="search" placeholder="Enter search word.">
+            <textarea name="comment" id="comment" cols="30" rows="10">Enter comment...</textarea>
+            <button type="button" id="save">Save</button>
+        </form>
+    </div>
+</body>
+</html>

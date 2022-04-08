@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body{
+            counter-reset: section;
+        }
+        h3{
+            counter-reset: subsection;
+        }
+        h3::before{
+            counter-increment: section;
+            content:counter(section) '. '
+        }
+        h4::before{
+            counter-increment: subsection;
+            content:counter(section) '.' counter(subsection) '. '
+        }
+    </style>
+</head>
+<body>
+    <h2>HTML and CSS Tutorial</h2>
+        <h3>Software Languages</h3>
+            <h4>HTML</h4>
+            <h4>CSS</h4>
+            <h4>HTML5</h4>
+            <h4>CSS3</h4>
+            <h4>Javascript</h4>
+            <h4>Angular JS</h4>
+            <h4>React JS</h4>
+            <h4>Vue JS</h4>
+        <h3>Server-based Languages</h3>
+            <h4>PHP</h4>
+            <h4>ASP.NET</h4>
+            <h4>Node JS</h4>
+        <h3>Mobile Languages</h3>
+            <h4>Swift</h4>
+            <h4>Java</h4>
+</body>
+</html>

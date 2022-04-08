@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structural Tags</title>
+    <style>
+        body {
+            margin: 0px;
+            ;
+        }
+        .page-top {
+            background-color: #474656;
+            padding: 10px;
+            text-align: center;
+            color: rgb(256, 256, 256);
+        }
+        .page-top img{
+            float: left;
+            width: 120px;
+        }
+        .page-left {
+            background-color: darkgoldenrod;
+            padding: 10px;
+            text-align: justify;
+            color: rgb(107, 21, 0);
+            width: 73.5%;
+            height: 400px;
+            float: left;
+        }
+        .page-right {
+            background-color: rgb(170, 193, 0);
+            padding: 10px;
+            text-align: justify;
+            color: rgb(0, 28, 106);
+            width: 22%;
+            height: 400px;
+            float: right;
+        }
+        .page-right a{
+            color: white;
+            text-decoration: none;
+        }
+        .page-right a:hover{
+            color: blue;
+            text-decoration: none;
+        }
+        .page-right li{
+            list-style-type: none;
+            padding: 7px;
+        }
+        .page-left .content {
+            padding: 10px;
+        }
+        .page-left header {
+            color: orange;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .page-bottom{
+            background-color: yellow;
+            padding: 15px;
+            text-align: center;
+            height: 20px;
+            clear:left;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        aside h2{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="page-top">
+            <img src="images/htmlcss.png" alt="">
+            <h2>
+                HTML 5 and CSS 3 Tutorial
+            </h2>
+        </header>
+        <section class="page-left">
+            <header>
+                <h2>Header</h2>
+            </header>
+            <article class="content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </article>
+            <footer>The left part of the site will be here.</footer>
+        </section>
+        <aside class="page-right">
+            <header>
+                <h2>
+                    Most Read Posts
+                </h2>
+            </header>
+            <ul>
+                <li><a href="">HTML</a></li>
+                <li><a href="">CSS</a></li>
+                <li><a href="">HTML 5</a></li>
+                <li><a href="">CSS 3</a></li>
+                <li><a href="">Javascript</a></li>
+                <li><a href="">Node JS</a></li>
+            </ul>
+        </aside>
+        <footer class="page-bottom">
+            All rights reserved. 2022
+        </footer>
+    </div>
+</body>
+
+</html>

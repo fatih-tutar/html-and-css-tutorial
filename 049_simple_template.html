@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Template</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .header{
+            background-color: darkkhaki;
+            padding: 9px;
+            text-align: center;
+            color: #333;
+        }
+        .menu ul{
+            background-color: #531A1B;
+            padding: 15px;
+            margin: 0;
+        }
+        .menu ul li{
+            list-style-type: none;
+            display: inline;
+            padding-right: 20px;
+        }
+        .menu a{
+            color: white;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            padding: 15px;
+        }
+        .menu ul li a:hover{
+            background-color: #7D2729;
+        }
+        .sidebar{
+            background-color: #111;
+            padding: 7px;
+            color: white;
+            width: 22%;
+            height: 540px;
+            float: left;
+        }
+        .sidebar li{
+            list-style-type: none;
+            padding: 7px;
+        }
+        .sidebar a{
+            color: white;
+            text-decoration: none;
+        }
+        .sidebar a:hover{
+            color: red;
+        }
+        .change{
+            background-color: darkred;
+            padding: 10px;
+            color: white;
+            width: 75.5%;
+            float: right;
+            height: 540px;
+        }
+        .change header{
+            color: burlywood;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            border-bottom: 1px solid #000;
+        }
+        .change .content{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+        .change footer{
+            border-top:1px solid #000;
+            padding: 5px;
+            float: right;
+        }
+        .page-bottom{
+            background-color: darkolivegreen;
+            padding: 15px;
+            height: 40px;
+            clear: left;
+            text-align: center;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML 5 and CSS 3 Tutorial</h1>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <aside class="sidebar">
+        <header>
+            <h2>
+                Tutorials
+            </h2>
+        </header>
+        <ul>
+            <li><a href="">HTML</a></li>
+            <li><a href="">CSS</a></li>
+            <li><a href="">HTML 5</a></li>
+            <li><a href="">CSS 3</a></li>
+            <li><a href="">Javascript</a></li>
+            <li><a href="">Node JS</a></li>
+        </ul>
+    </aside>
+    <section class="change">
+        <header>
+            <h2>Header</h2>
+        </header>
+        <article class="content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </article>
+        <footer>The left part of the site will be here.</footer>
+        <header>
+            <h2>Header</h2>
+        </header>
+        <article class="content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </article>
+        <footer>The left part of the site will be here.</footer>
+    </section>
+    <footer class="page-bottom">
+        &copy; All rights reserved. 2022
+    </footer>
+</body>
+</html>
